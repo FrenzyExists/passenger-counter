@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Fuzzy+Bubbles:wght@400;700&family=Indie+Flower&family=Patrick+Hand&family=Patrick+Hand+SC&display=swap" rel="stylesheet"> 
     <title>Human Counter</title>
 </head>
 <body>
-    <h1>Humans Counted</h1>
-    <h2  id="human-counter">0</h2>
-    <button id="increment" onclick="increment()">ADD</button>
-    <button id="save-me" onclick="save()">SAVE</button>
-    <h4 id="past-data"></h4>
+    <div class="wrapper">
+        <h1>Humans Counted</h1>  
+        <h2  id="human-counter">0</h2>
+        <div class="btn">
+            <button id="increment" onclick="increment()">ADD</button>
+            <button id="save-me" onclick="save()">SAVE</button>
+        </div>
+        <h4 id="past-data"></h4>
+        <button id="reset">RESET</button>
+    </div>
+
+    <div class="notification"></div>
     <script src="./script.js"></script>
 </body>
 </html>

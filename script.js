@@ -28,8 +28,11 @@ const sum_laps = (lap_list) => {
 
 // Lesson: Create a function which saves the value
 const save = () => {
-    console.log(count)
+      console.log("saving...")
+      
 }
+
+
 
 countdown(5);
 console.log(sum_laps(laps));
