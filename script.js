@@ -13,7 +13,7 @@ const human_to_dog = (age) => {
 const increment = () => { 
     count++;
     console.log("more H U M A N S");
-    document.getElementById('human-counter').innerText = count
+    document.getElementById('human-counter').textContent = count
 }
 
 // Lesson: create a function that automates something
@@ -28,8 +28,21 @@ const sum_laps = (lap_list) => {
 
 // Lesson: Create a function which saves the value
 const save = () => {
-      console.log("saving...")
-      
+    if (count != 0) {
+        if (/\d/.test(document.getElementById("entries").textContent)) {
+            document.getElementById("entries").textContent += " - " + count;
+        } else {
+            document.getElementById("entries").textContent += " " + count;
+        }
+        console.log("saving...")
+    }
+}
+
+const reset = () => {
+    if (count != 0)
+        console.log("Resetting...")
+        count = -1;
+        increment()
 }
 
 
